@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Define title-->
+        <title>List View App</title>
+        
+        <!--You can load all the css files here -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        <!--HTML content goes here-->
+         <li id="list">
+         </li>
+         <input id="input" type="text"></input>
+         <button onclick="myBtn()">Insert</button>
+        <script>
+            function myBtn(){
+    var n = document.getElementById("input").value;
+    document.getElementById("list").innerHTML = n;
+}
+
+        </script>
+        <!--You can load all the javascript files here-->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
